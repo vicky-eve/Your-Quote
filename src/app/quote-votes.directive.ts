@@ -4,7 +4,6 @@ import { Directive } from '@angular/core';
   selector: '[appQuoteVotes]'
 })
 export class QuoteVotesDirective {
-
   constructor() { }
 
 }

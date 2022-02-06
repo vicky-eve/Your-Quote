@@ -1,27 +1,39 @@
-# YourQuote
+# PROJECT NAME: YOUR QUOTE
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 
-## Development server
+## Author
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+VICTORIA EVE AWUOR
 
-## Code scaffolding
+## Set up instructions and installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+~ clone this repository https://github.com/vicky-eve/Your-Quote
+~ open terminal to work in Your-Quote directory
 
-## Build
+## Development
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+ To contribute
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* Fork the repo
+* Create a new branch (git checkout -b)
+* Make the  changes in the files
+* Add changes to reflect the changes made
+* Commit your changes (git commit -am )
+* Push to the branch (git push origin)
+* Create a Pull Request
+* Run ng serve for a dev server. The app will automatically reload if you change any of the source files.
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## Project Description
+
+This is an application meant for users to input their quotes and observe other peoples's reactions to the quotes.
+
 
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Link

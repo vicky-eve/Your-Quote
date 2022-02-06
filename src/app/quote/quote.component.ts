@@ -8,36 +8,36 @@ import { Quote } from '../quote';
 })
 
 export class QuoteComponent implements OnInit {
-  quote:Quote[]=[
-    new Quote(1,'by:Lupita Nyongo', 'All dreams are valid','Eve',new Date() ),
-    new Quote(2,'by:Kirkman ','Leaders are made not born', 'Eve', new Date()),
+  quotes:Quote[]=[
+    new Quote(1, 'by:Dale Carnegie', 'Most of the important things in the world have been accomplished by people who kept on trying when their seemed to be no hope','Edwike'),
+    new Quote(2,'by:Maya Angelou','If you are always trying to be normal you will never know how amazing you can be','Edwike'),
     
   ];
 
   toggleDetails(index:any){
-    this.quote[index].showDescription = !this.quote[index].showDescription;
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
     }
 
     completeQuote(isComplete:any, index:any){
       if (isComplete) {
-        this. quote.splice(index,1);
+        this. quotes.splice(index,1);
       }
     }
 
     deleteQuote(isComplete:any, index:any){
       if (isComplete) {
-        let toDelete = confirm(`Are you sure you want to delete ${this.quote[index].author}?`)
+        let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].author}?`)
   
         if (toDelete){
-          this.quote.splice(index,1)
+          this.quotes.splice(index,1)
         }
       }
     }
 
     addNewQuote(quote:any){
-      let quoteLength = this.quote.length;
+      let quoteLength = this.quotes.length;
       quote.id = quoteLength+1;
-      this.quote.push(quote)
+      this.quotes.push(quote)
 
     }
         

@@ -1,12 +1,12 @@
-export class Quote {
+export class Quote{
+ 
   showDescription: boolean;
-  constructor(
-    public id: number,
-    public Quote: string,
-    public author: string,
-    public name: string,
-    completeDate : Date){
-    this.showDescription=false;
+ constructor(
+   public id: number,
+   public author: string,
+   public Quote: string,
+   public name: string){
+   this.showDescription=false;
 
 }
 }
