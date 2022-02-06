@@ -1,1 +1,11 @@
 <p>quote works!</p>
+<h1>My quote</h1>
+<hr>
+<ul>
+  <div *ngFor='let quote of quotes;let i = index'>
+    <li>{{quote.name}}</li>
+    <button (click)='toggleDetails(i)'>Toggle Details</button>
+    <app-goal-detail *ngIf='quote.showDescription' [quote]='quote'></app-quote-details>
+  </div>
+</ul>
+<p *ngIf='quotes.length > 1'>You have too many quotes</p>
