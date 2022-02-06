@@ -8,8 +8,8 @@ VICTORIA EVE AWUOR
 
 ## Set up instructions and installation
 
-~ clone this repository https://github.com/vicky-eve/Your-Quote
-~ open terminal to work in Your-Quote directory
+* clone this repository https://github.com/vicky-eve/Your-Quote
+* open terminal to work in Your-Quote directory
 
 ## Development
 

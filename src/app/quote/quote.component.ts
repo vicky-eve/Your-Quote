@@ -9,8 +9,8 @@ import { Quote } from '../quote';
 
 export class QuoteComponent implements OnInit {
   quotes:Quote[]=[
-    new Quote(1, 'by:Dale Carnegie', 'Most of the important things in the world have been accomplished by people who kept on trying when their seemed to be no hope','Edwike'),
-    new Quote(2,'by:Maya Angelou','If you are always trying to be normal you will never know how amazing you can be','Edwike'),
+    new Quote(1, 'by:Lupita Nyongo', 'All dreams are valid','Eve'),
+    new Quote(2,'by:Kirkman Frost','We live to see tomorrow','Eve'),
     
   ];
 
