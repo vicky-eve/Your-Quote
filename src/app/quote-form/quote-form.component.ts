@@ -9,7 +9,7 @@ import { Quote } from '../quote';
 
 export class QuoteFormComponent {
 
-  newQuote = new Quote(0,"","","");
+  newQuote = new Quote("0","","",);
 
   @Output() addQuote = new EventEmitter<Quote>();
 

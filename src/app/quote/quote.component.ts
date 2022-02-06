@@ -8,36 +8,36 @@ import { Quote } from '../quote';
 })
 
 export class QuoteComponent implements OnInit {
-  quotes:Quote[]=[
-    new Quote(1, 'by:Lupita Nyongo', 'All dreams are valid', 'Eve'),
-    new Quote(2,'by:Kirkman ','Leaders are made not born','Eve'),
+  quote:Quote[]=[
+    new Quote('1', 'by:Lupita Nyongo', 'All dreams are valid', ),
+    new Quote('2','by:Kirkman ','Leaders are made not born', ),
     
   ];
 
   toggleDetails(index:any){
-    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+    this.quote[index].showDescription = !this.quote[index].showDescription;
     }
 
     completeQuote(isComplete:any, index:any){
       if (isComplete) {
-        this. quotes.splice(index,1);
+        this. quote.splice(index,1);
       }
     }
 
     deleteQuote(isComplete:any, index:any){
       if (isComplete) {
-        let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].author}?`)
+        let toDelete = confirm(`Are you sure you want to delete ${this.quote[index].author}?`)
   
         if (toDelete){
-          this.quotes.splice(index,1)
+          this.quote.splice(index,1)
         }
       }
     }
 
     addNewQuote(quote:any){
-      let quoteLength = this.quotes.length;
+      let quoteLength = this.quote.length;
       quote.id = quoteLength+1;
-      this.quotes.push(quote)
+      this.quote.push(quote)
 
     }
         
