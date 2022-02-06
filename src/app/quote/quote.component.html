@@ -1,11 +1,21 @@
-<p>quote works!</p>
-<h1>My quote</h1>
-<hr>
-<ul>
-  <div *ngFor='let quote of quotes;let i = index'>
-    <li>{{quote.name}}</li>
-    <button (click)='toggleDetails(i)'>Toggle Details</button>
-    <app-goal-detail *ngIf='quote.showDescription' [quote]='quote'></app-quote-details>
-  </div>
-</ul>
-<p *ngIf='quotes.length > 1'>You have too many quotes</p>
+
+<div class= "container-fluid">
+  <h1 class="text-center">QUOTES </h1>
+  <h5 class="text-center"><i>GOOD TIMES ARE COMING!</i></h5>
+  
+  <hr>
+  <div class= "row">
+    <div class= "col-md-6">
+        <ul>
+          <div *ngFor='let quote of quotes;let i = index'>
+            <li>{{quote.author}}</li> 
+            <button (click)='toggleDetails(i)'>Be Inspired</button>
+            <app-quote-detail *ngIf='quote.showDescription'[Quote]='quote'  (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
+          </div>
+          <div class="col-md-6">
+            <app-quote-form  (addQuote)="addNewQuote($event)"></app-quote-form>
+          </div>
+        </ul>
+      </div>
+    </div>
+</div>
