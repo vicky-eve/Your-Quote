@@ -9,8 +9,8 @@ import { Quote } from '../quote';
 
 export class QuoteComponent implements OnInit {
   quote:Quote[]=[
-    new Quote('1', 'by:Lupita Nyongo', 'All dreams are valid', ),
-    new Quote('2','by:Kirkman ','Leaders are made not born', ),
+    new Quote(1,'by:Lupita Nyongo', 'All dreams are valid','Eve',new Date() ),
+    new Quote(2,'by:Kirkman ','Leaders are made not born', 'Eve', new Date()),
     
   ];
 
