@@ -4,7 +4,7 @@ export class Quote{
  constructor(
    public id: number,
    public author: string,
-   public Quote: string,
+   public quote: string,
    public name: string){
    this.showDescription=false;
 

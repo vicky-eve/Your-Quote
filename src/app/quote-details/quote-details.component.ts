@@ -7,7 +7,7 @@ import { Quote } from '../quote';
   styleUrls: ['./quote-details.component.css']
 })
 export class QuoteDetailsComponent implements OnInit {
-  @Input() Quote: Quote;
+  @Input()  Quote: Quote;
   @Output() isComplete = new EventEmitter<boolean>();
 
   quoteComplete(complete:boolean){

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { title } from 'process';
+
 
 @Component({
   selector: 'app-root',
@@ -7,7 +7,7 @@ import { title } from 'process';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
+  title = "Your Quote"
 constructor() {}
 
 
